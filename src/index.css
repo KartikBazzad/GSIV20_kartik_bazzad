@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply px-3 py-2 rounded;
+  }
+  .button-disabled {
+    @apply bg-gray-400 text-white;
+  }
+  .button-enabled {
+    @apply bg-blue-600 text-white cursor-pointer outline outline-1 hover:outline-offset-1 outline-blue-600 hover:bg-blue-700 hover:outline-blue-700;
+  }
+}
